@@ -1,0 +1,119 @@
+.products-section{
+  padding: 30px 0px;
+  background-color: #8080801f;
+}
+
+.products-section .products-heading{
+  margin-left: 8px;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.4rem;
+}
+
+.products-outer-main-container button{
+  display: none;
+}
+
+.products-outer-main-container{
+  position: relative;
+}
+
+.products-outer-container{
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 0px 10px;
+}
+
+.products-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth; 
+  padding: 10px 0px;
+  position: relative;
+}
+
+.products-section .product-card{
+  /* margin-right: 15px; */
+  border: "none";
+}
+
+.products-section .product-card:hover{
+  transform: translateY(10px);
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.products-scroll-container::-webkit-scrollbar {
+  display: none; 
+}
+
+
+/* --- Responsive ----- */
+
+@media (min-width: 768px){
+
+  .products-section .products-heading{
+    margin-left: 50px;
+  }
+
+  .products-scroll-container {
+    padding: 10px 50px;
+  }
+  
+.products-outer-main-container button{
+  display: inline-block;
+}
+
+.products-outer-main-container{
+    position: relative;
+}
+
+.products-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth; 
+    padding: 10px 50px;
+    position: relative;
+  }
+
+  .products-scroll-container::-webkit-scrollbar {
+    display: none; 
+}
+  
+  .scroll-button {
+    background-color: transparent;
+    border: none;
+    color: #555;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .scroll-button.left {
+    left: 0;
+  }
+
+  .scroll-button.left i{
+    margin: 12px;
+    background-color: grey;
+    color: orange;
+    padding: 6px;
+    border-radius: 50%;
+  }
+  
+  .scroll-button.right {
+    right: 0;
+  }
+
+  .scroll-button.right i{
+    margin: 12px;
+    background-color: grey;
+    color: orange;
+    padding: 6px;
+    border-radius: 50%;
+  }
+}
+

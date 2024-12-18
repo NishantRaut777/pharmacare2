@@ -1,0 +1,147 @@
+.header-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px groove black;
+    font-family: "Montserrat", sans-serif;
+    padding: 8px 45px;
+}
+
+.header-main-container .logo-form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-main-container .logo-form-container .company-name{
+    margin: 0px 9px;
+}
+
+.header-main-container .logo-form-container img{
+    width: 100px;
+}
+
+.header-main-container .logo-form-container form{
+    margin: 12px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-main-container .logo-form-container form input{
+    padding: 7px 5px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.header-main-container ul{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-main-container ul li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.header-main-container ul li a{
+    text-decoration: none;
+}
+
+
+.header-main-container .login-register-uname{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cart-container{
+    position: relative;
+}
+
+.cart-container .cart-quantity{
+    position: absolute;
+    right: -8px;
+    top: -10px;
+    z-index: 100;
+    background-color: rgb(88, 212, 88);
+    border-radius: 50%;
+    padding: 0px 4px;
+    font-size: 0.7rem;
+}
+
+/* ------------------------- */
+
+@media (min-width: 995px){
+    .header-main-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-main-container .logo-form-container{
+        flex-direction: row;
+    }
+
+    .header-main-container .logo-form-container img{
+        width: 135px;
+    }
+}
+
+@media (min-width: 768px){
+   
+
+    .header-main-container .logo-form-container{
+        display: flex;
+    }
+
+    .header-main-container .logo-form-container form{
+        margin: 0px;
+        align-items: center;
+    }
+    
+    .header-main-container form input{
+        padding: 7px 5px;
+        border-radius: 8px;
+        width: 250px;
+        margin-right: 20px;
+    }
+    
+    .header-main-container .login-register-uname{
+        display: flex;
+        align-items: center;
+    }
+
+    .header-main-container .login-register-uname .cart-container .cart-quantity{
+        top: -5px;
+        padding: 0px 6px;
+        /* font-size: 1rem; */
+    }
+    
+    .cart-icon{
+        font-size: 22px;
+        margin: 5px 0px 0px 0px;
+    }
+    
+    /* .cart-container{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 15px;
+    }
+    
+    .cart-container p{
+        padding-bottom: 0px !important;
+    } */
+}
+
+
+@media (min-width: 900px){
+    .header-main-container form input{
+        width: 350px;
+    }
+}
+
+
+

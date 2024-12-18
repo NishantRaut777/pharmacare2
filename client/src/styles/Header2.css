@@ -1,0 +1,181 @@
+.header-main-container-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-main-container-2 .mobile-hamburger-container{
+    position: fixed;
+    display: flex;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 100;
+    background-color: #F5F5F5;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mobile-hamburger-container.open{
+    transform: translateX(0);
+}
+
+.header-main-container-2 .header-logo-pharmacare img{
+    width: 130px;
+}
+
+.header-main-container-2 .header-search-container{
+    display: none;
+}
+
+.header-main-container-2 .header-cart-container{
+    display: none;
+}
+
+.header-main-container-2 ul{
+    margin: 0;
+    padding: 0.5em 0.7em;
+}
+
+.header-main-container-2 ul li{
+    list-style: none;
+}
+
+.mobile-hamburger-container .logout-btn-hamburger{
+    padding: 0.3rem 0.5rem;
+    margin: 0.3rem 0rem;
+    cursor: pointer;
+    border: 2px solid;
+}
+
+.mobile-hamburger-container .logout-btn-hamburger:hover{
+    background-color: rgba(214, 103, 103, 0.877);
+    color: black;
+}
+
+.mobile-hamburger-container .login-btn-hamburger{
+    display: inline-block;
+    padding: 0.3rem 0.5rem;
+    margin: 0.3rem 0rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    border: 2px solid;
+}
+
+.mobile-hamburger-container .login-btn-hamburger:hover{
+   background-color: black;
+   color: white;
+}
+
+.mobile-hamburger-container .register-btn-hamburger{
+    display: inline-block;
+    padding: 0.3rem 0.5rem;
+    margin: 0.3rem 0rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    border: 2px solid;
+}
+
+.mobile-hamburger-container .register-btn-hamburger:hover{
+    background-color: rgba(25, 211, 25, 0.842);
+    color: black;
+}
+
+
+@media (min-width: 768px){
+    .header-main-container-2{
+        padding: 10px 0px;
+        display: grid;
+        grid-template-columns: 1fr 6fr 4fr;
+        font-size: 0.9rem;
+    }
+    
+    .header-main-container-2 .header-logo-pharmacare{
+        display: flex;
+        align-items: center;
+    }
+
+    .header-main-container-2 .header-logo-pharmacare a{
+        margin-left: 25px;
+    }
+    
+    .header-main-container-2 .header-logo-pharmacare img{
+        width: 130px;
+    }
+    
+    .header-main-container-2 .header-search-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-main-container-2 .header-search-container form {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .header-main-container-2 .header-search-container form input{
+        padding: 8px;
+        width: 55%;
+        border-radius: 7px;
+    }
+    
+    .header-main-container-2 .header-cart-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header-main-container-2 .header-cart-container{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header-main-container-2 .header-cart-container a{
+        padding: 0px 5px;
+    }
+    
+    .header-main-container-2 .header-cart-container .cart-container{
+        font-size: 18px;
+    }
+    
+    .header-main-container-2 .header-cart-container ul{
+        display: flex;
+        padding: 0px 5px;
+        margin: 0px;
+    }
+    
+    .header-main-container-2 ul li{
+        list-style: none;
+    }
+    
+    .header-main-container-2 ul li a{
+        text-decoration: none;
+    }
+
+    .header-main-container-2 .header-cart-container button{
+        font-size: 0.9rem;
+        padding: 0.4rem 0.6rem;
+    }
+
+    .header-main-container-2 .hamburger-class{
+        display: none;
+    }
+}
+
+@media (min-width: 1100px){
+    .header-main-container-2{
+        font-size: 1rem;
+    }
+
+    .header-main-container-2{
+        grid-template-columns: 1fr 7fr 3fr;
+    }
+}
+

@@ -1,0 +1,33 @@
+.main-form-outer-container{
+    height: 100vh;
+    background-color: #F8F8F8;;
+}
+
+.main-form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+
+.spin-loader{
+    margin: 20px;
+}
+
+.form-container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* height: 100vh; */
+   
+}
+
+.loginForm{
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.loginForm-notuser-link{
+    text-decoration: none;
+}

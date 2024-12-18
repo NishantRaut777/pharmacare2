@@ -1,0 +1,156 @@
+.spin-loader{
+    display: flex;
+    justify-content: center;
+}
+
+.single-product-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: 1.5rem 0rem 3rem 0rem;
+    height: 100%;
+    border-top: 1px solid;
+    font-family: "Montserrat", sans-serif;
+}
+
+.single-product-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0px 35px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5rem;
+}
+
+.single-product-container img{
+    width: 150px;
+    height: 200px;
+    object-fit: contain;
+    margin: auto;
+}
+
+.single-product-container h3{
+    font-size: 1rem;
+}
+
+.single-product-container .rating-span{
+    font-size: 0.8rem;
+}
+
+.single-product-container .price{
+    font-size: 0.8rem;
+}
+
+.single-product-container .add-to-cart-container{
+    display: flex;
+    align-items: center;
+}
+
+.quantity-container i{
+    font-size: 1rem;
+    margin: 0px 10px;
+    cursor: pointer;   
+}
+
+.quantity-container span{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.single-product-container .product-info-container ul{
+    padding: 0rem 0.4rem;
+}
+
+.single-product-container .product-info-container ul li{
+    font-size: 0.8rem;
+}
+
+.single-product-section .similiar-products-container .similiar-products-container-inner-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.single-product-section .similiar-products-container{
+    padding: 1rem;
+}
+
+
+@media (min-width: 450px){
+    .single-product-container{
+        flex-direction: row;
+    }
+
+    .single-product-container .img-div{
+        flex: 1;
+    }
+    
+    .single-product-container .product-info-container{
+        flex: 2;
+    }
+}
+
+
+/* ------------------------------ */
+
+
+@media (min-width: 768px){
+    
+    .single-product-section{
+        /* padding: 40px 0px 30px 0px; */
+        padding: 2.5rem 0rem 5rem 0rem;
+        /* height: 85vh; */
+    }
+
+    .single-product-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* width: 75%; */
+    }
+
+    .single-product-container .img-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .single-product-container img{
+        width: 275px;
+        margin: 0px;
+        margin-right: 20px;
+    }
+
+    .single-product-container h3{
+        font-size: 1.5rem;
+    }
+    
+    .single-product-container .rating-span{
+        font-size: 1.2rem;
+    }
+    
+    .single-product-container .price{
+        font-size: 1.2rem;
+    }
+
+    .single-product-container .product-info-container ul li{
+        font-size: 1rem;
+    }
+}
+
+
+@media (min-width: 850px){
+    
+
+    .single-product-container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    
+}

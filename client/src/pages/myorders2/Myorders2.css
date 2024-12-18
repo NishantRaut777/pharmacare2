@@ -1,0 +1,77 @@
+/* Mobile design */
+
+.my-orders-outer-container h1{
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 0.8rem 0rem;
+    margin: 0;
+    background-color: #30c9c91c;
+    font-family: Helvetica;
+    margin-bottom: 1rem;
+}
+
+.my-orders-main-container-1{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+    padding: 0.7rem 0.6rem;
+}
+
+.my-orders-main-container-1 .my-orders-inner-container-1{
+    margin-bottom: 1rem;
+}
+
+.my-orders-outer-container .my-orders-main-container-1 .my-orders-inner-container-1 h5{
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.my-orders-outer-container .my-orders-main-container-1 .my-orders-inner-container-1 .my-orders-inner-container-2{
+    background-color: #8080801f;
+    padding: 1rem 0.7rem;
+    border-radius: 0.7rem;
+}
+
+.my-orders-outer-container .my-orders-main-container-1 .my-orders-inner-container-1 .my-orders-inner-container-2 .my-orders-inner-container-3{
+    position: relative;
+}
+
+.my-orders-outer-container .my-orders-main-container-1 .my-orders-inner-container-1 .my-orders-inner-container-2 .my-orders-inner-container-3 .order-container-delete-icon{
+    position: absolute;
+    right: 0;
+    top: 2px;
+    right: 2px;
+}
+
+.my-orders-outer-container .my-orders-main-container-1 .my-orders-inner-container-1 .my-orders-inner-container-2 .my-orders-inner-container-3 .my-order-product{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.my-orders-outer-container .my-orders-main-container-1 .my-orders-inner-container-1 .my-orders-inner-container-2 .my-orders-inner-container-3 .my-order-product .my-order-image-left-div{
+    margin-right: 0.8rem;
+}
+
+.my-orders-outer-container .my-orders-main-container-1 .my-orders-inner-container-1 .my-orders-inner-container-2 .my-orders-inner-container-3 .my-order-product .my-order-right-div .order-title{
+    font-weight: bold;
+}
+
+.my-orders-outer-container .my-orders-main-container-1 img{
+    height: 55px;
+    object-fit: contain;
+    width: 50px;
+}
+
+
+/* Desktop design */
+@media (min-width: 750px){
+    .my-orders-outer-container .my-orders-main-container-1 .my-orders-inner-container-1 .my-orders-inner-container-2 .my-orders-inner-container-3{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .my-orders-outer-container .my-orders-main-container-1 .my-orders-inner-container-1 .my-orders-inner-container-2 .my-orders-inner-container-3 .my-order-product{
+        width: 20rem;
+    }
+}

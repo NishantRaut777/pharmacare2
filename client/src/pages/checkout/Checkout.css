@@ -1,0 +1,214 @@
+.checkout-main-container{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid grey;
+    /* font-family: "Poppins", sans-serif;; */
+    font-family: "Mulish", sans-serif;
+}
+
+.spin-loader{
+    height: 100vh;
+}
+
+.checkout-products-outer-container{
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px 52px; */
+    padding: 10px 28px;
+    /* background-color: #0080100f; */
+    border-bottom: 1px solid grey;
+}
+
+.checkout-products-inner-container{
+    /* display: grid; */
+    display: flex;
+     /* flex-wrap: nowrap;
+    white-space: nowrap; */
+    overflow-x: auto; 
+    /* flex-wrap: wrap; */
+    /* grid-template-columns: repeat(auto-fill, 250px); */
+    /* flex-wrap: nowrap; */
+    /* overflow-x: auto; */
+}
+
+.checkout-products-inner-container::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.checkout-products-inner-container .drawer-product{
+    width: 155px;
+    margin-right: 10px;
+    border: 1px groove #80808045;
+    padding: 10px 0px 0px 5px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.checkout-products-inner-container .drawer-product .drawer-product-image{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    width: 100%; 
+    height: 4rem;
+    object-fit: contain;
+}
+
+.checkout-products-inner-container .drawer-product .long-word{
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.checkout-main-container h3{
+    margin-bottom: 30px;
+}
+
+.checkout-main-container .checkout-Total-Products{
+    margin: 5px 0px;
+}
+
+
+/* .my-form-container .checkOutregisterForm h3{
+    margin-bottom: 15px;
+} */
+
+/* to remove the increment and decrement for type number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.my-form-outer-main-container{
+    /* padding: 0px 52px 50px; */
+    padding: 0px 28px 50px;
+}
+
+.my-form-outer-main-container h5{
+    padding: 20px 15px;
+    background-color: #8080803b;
+}
+
+
+.my-form-outer-main-container .my-form-container .checkOutregisterForm{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.my-form-outer-main-container .my-form-container .checkOutregisterForm span{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.my-form-outer-main-container .my-form-container .checkOutregisterForm .star-label::after{
+    content: "*";
+    color: red;
+}
+
+.my-form-outer-main-container .my-form-container .checkOutregisterForm input{
+    padding: 9px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.my-form-outer-main-container .my-form-container .checkOutregisterForm:nth-child(5){
+    display: flex;
+}
+
+@media(min-width: 450px){
+
+    .checkout-products-outer-container{
+        padding: 10px 42px;
+    }
+
+    .my-form-outer-main-container{
+        /* padding: 0px 52px 50px; */
+        padding: 0px 42px 50px;
+    }
+}
+
+
+
+@media (min-width: 768px){
+    .my-form-outer-main-container .my-form-container .checkOutregisterForm input{
+        padding: 9px;
+        margin-bottom: 20px;
+        width: 70%;
+    }
+}
+
+
+@media (min-width: 1000px){
+    .my-form-outer-main-container .my-form-container .checkOutregisterForm input{
+        width: 55%;
+    }
+}
+
+@media (min-width: 1020px){
+    .my-form-outer-main-container .my-form-container .checkOutregisterForm input{
+        padding: 9px;
+        margin-bottom: 20px;
+        width: 40%;
+    }
+}
+
+
+/* -------------------- */
+
+
+
+
+
+
+/* .checkout-main-container{
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+} */
+
+
+/* .checkout-products-outer-container{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    flex: 3;
+} */
+
+/* .checkout-products-inner-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checkout-products-outer-container .drawer-product{
+    width: 25%;
+    margin-right: 10px;
+    border: 1px solid;
+    padding: 15px 20px;
+}
+
+.checkout-products-outer-container .drawer-product .drawer-product-image{
+    margin-right: 10px;
+    width: 95px; 
+    height: 4rem;
+} */
+
+
+
+
+/* .my-form-container form .form-inputs{
+    display: flex;
+}
+
+.my-form-container form .form-inputs label{
+    margin-right: 10px;
+}
+
+.my-form-container form .form-inputs input{
+    padding: 5px;
+} */
