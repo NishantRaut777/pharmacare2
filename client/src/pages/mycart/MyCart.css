@@ -63,11 +63,17 @@
     width: 50px;
 }
 
-.my-cart-item-container-1 .my-cart-product .quantity-decrement:hover,
-.my-cart-item-container-1 .my-cart-product .quantity-increment:hover,
-.my-cart-item-container-2 .my-cart-item-inner-container-left .my-cart-product-2 .my-cart-desc-2 .quantity-price-container .quantity-decrement:hover,
-.my-cart-item-container-2 .my-cart-item-inner-container-left .my-cart-product-2 .my-cart-desc-2 .quantity-price-container .quantity-increment:hover
-{
+.my-cart-item-container-1 .my-cart-product .quantity-decrement,
+.my-cart-item-container-1 .my-cart-product .quantity-increment,
+.my-cart-item-container-2 .my-cart-item-inner-container-left .my-cart-product-2 .my-cart-desc-2 .quantity-price-container .quantity-decrement,
+.my-cart-item-container-2 .my-cart-item-inner-container-left .my-cart-product-2 .my-cart-desc-2 .quantity-price-container .quantity-increment {
+    background-color: white;
+}
+
+.my-cart-item-container-1 .my-cart-product .quantity-decrement:active,
+.my-cart-item-container-1 .my-cart-product .quantity-increment:active,
+.my-cart-item-container-2 .my-cart-item-inner-container-left .my-cart-product-2 .my-cart-desc-2 .quantity-price-container .quantity-decrement:active,
+.my-cart-item-container-2 .my-cart-item-inner-container-left .my-cart-product-2 .my-cart-desc-2 .quantity-price-container .quantity-increment:active {
     background-color: black;
 }
 

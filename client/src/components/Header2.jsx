@@ -222,10 +222,37 @@ const Header2 = () => {
           </li>
         </ul>
       </div>
+      
+      <div className="mobile-navbar-right-container">
+      <div className="mobile-cart-logo">
+      {currentUser !== null ? (
+          <div className="cart-container">
+            <Link
+              to={"/mycart"}
+              className="ul-link"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <i
+                className="fa-solid fa-cart-shopping cart-icon-header2"
+                style={{ cursor: "pointer" }}
+                onClick={() => setCartActive(!cartActive)}
+              ></i>
+            </Link>
+
+            {cartData?.items?.length > 0 && (
+              <span className="cart-quantity">{cartData?.items?.length}</span>
+            )}
+          </div>
+        ) : (
+          ""
+        )}
+      </div>
 
       <div className="hamburger-class">
         <Hamburger toggled={isMenuOpen} toggle={setOpen} size={20} />
       </div>
+      </div>
+     
     </div>
   );
 };
