@@ -1,13 +1,18 @@
 .main-form-outer-container{
-    height: 100vh;
-    background-color: #F8F8F8;;
+    /* height: 100vh; */
+    background-color: #F8F8F8;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .main-form-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 60px;
+    /* padding: 60px; */
+    padding: 3rem 1rem;
 }
 
 .spin-loader{

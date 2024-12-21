@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Form, Input, message , Spin} from "antd";
 import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
@@ -15,6 +15,26 @@ const Register = () => {
     const navigate = useNavigate();
 
     const { loading, error, currentUser } = useSelector((state) => state.user);
+    const [password, setPassword] = useState('');
+    const [isValidLength, setIsValidLength] = useState(false);
+    const [hasUpperCase, setHasUpperCase] = useState(false);
+    const [hasLowerCase, setHasLowerCase] = useState(false);
+    const [hasNumber, setHasNumber] = useState(false);
+    const [hasSpecialChar, setHasSpecialChar] = useState(false);
+
+    const validatePassword = (password) => {
+      setIsValidLength(password.length >= 8 && password.length <= 15);
+      setHasUpperCase(/[A-Z]/.test(password));
+    setHasLowerCase(/[a-z]/.test(password));
+    setHasNumber(/\d/.test(password));
+    setHasSpecialChar(/[@.#$!%*?&^]/.test(password));
+    }
+
+    const handleChange = (e) => {
+      const inputPassword = e.target.value;
+      setPassword(inputPassword);
+      validatePassword(inputPassword);
+    }
 
     const dispatch = useDispatch();
 
@@ -70,9 +90,21 @@ const Register = () => {
                   <Input type="email" required />
                 </Form.Item>
 
-                <Form.Item label="Password" name="password">
+                <Form.Item label="Password" name="password" onChange={handleChange}>
                   <Input type="password" required />
                 </Form.Item>
+
+                <ul>
+                  <li style={{ color: isValidLength ? 'green' : 'red' }}>{isValidLength ? '✔' : '✘'} 8-15 characters</li>
+
+                  <li style={{ color: hasUpperCase ? 'green' : 'red' }}>{isValidLength ? '✔' : '✘'} At least one uppercase letter (A-Z)</li>
+
+                  <li style={{ color: hasLowerCase ? 'green' : 'red' }}>{hasLowerCase ? '✔' : '✘'} At least one uppercase letter (a-z)</li>
+
+                  <li style={{ color: hasNumber ? 'green' : 'red' }}>{hasNumber ? '✔' : '✘'} At least one number (0-9) </li>
+
+                  <li style={{ color: hasSpecialChar ? 'green' : 'red' }}>{hasSpecialChar ? '✔' : '✘'} At least one special character (@.#$!%*?&^)</li>
+                </ul>
 
                 <button className="btn btn-primary" type="submit">
                   Register

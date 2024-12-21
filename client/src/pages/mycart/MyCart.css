@@ -3,6 +3,12 @@
     display: flex;
     flex-direction: column;
     font-size: 0.7rem;
+    overflow-y: auto;
+    max-height: calc(100vh - 200px);
+}
+
+.my-cart-item-container-1::-webkit-scrollbar{
+    display: none;
 }
 
 .my-cart-item-container-2 {

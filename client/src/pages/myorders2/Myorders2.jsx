@@ -120,7 +120,7 @@ const Myorders2 = () => {
         </div>
       )}
 
-      <Footer2 />
+      <Footer2 isBottom={true}/>
     </>
   );
 };
