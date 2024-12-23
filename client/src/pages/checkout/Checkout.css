@@ -94,8 +94,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 .my-form-outer-main-container .my-form-container .checkOutregisterForm{
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
+    font-size: 0.9rem;
 }
 
 
