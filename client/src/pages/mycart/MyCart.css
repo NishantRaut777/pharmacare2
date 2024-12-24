@@ -7,6 +7,15 @@
     max-height: calc(100vh - 205px);
 }
 
+.my-cart-item-container-2 .my-cart-item-inner-container-left{
+    overflow-y: auto;
+    max-height: calc(100vh - 205px);
+}
+
+.my-cart-item-container-2 .my-cart-item-inner-container-left::-webkit-scrollbar{
+    display: none;
+}
+
 .my-cart-item-container-1::-webkit-scrollbar{
     display: none;
 }
